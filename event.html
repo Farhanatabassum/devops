@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Workshop Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image:linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+             url("https://media.licdn.com/dms/image/D4D12AQHHI57axZWOaQ/article-cover_image-shrink_720_1280/0/1715096683395?e=2147483647&v=beta&t=Dx_mtJz4Y6xqR8ZGyj04Fd_r0tic5RCh-ZOEw1P9T9A");
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Workshop Event Registration</h2>
+        <form action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Full Name">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+
+            <label for="session">Choose event name:</label>
+            <select id="session" name="session" placeholder="Select">
+                <option value="">Select a session</option>
+                <option value="codecraft">CodeCraft: Mastering the Art of Programming</option>
+                <option value="designsprint">DesignSprint: UI/UX Essentials</option>
+                <option value="techtonic">TechTonic: Shifting the Digital Landscape</option>
+                <option value="innobuild">InnoBuild: Innovate and Create</option>
+                <option value="datadive">DataDive: Uncovering Insights</option>
+                <option value="creativecanvas">CreativeCanvas: Digital Design Workshop</option>
+                <option value="mindshift">MindShift: The Future of AI</option>
+                <option value="startuplab">StartupLab: From Idea to Launch</option>
+                <option value="cybersavvy">CyberSavvy: Security in the Digital Age</option>
+                <option value="webwizards">WebWizards: Front-End Development Essentials</option>
+            </select>
+
+            <label for="session">Choose Your Session:</label>
+            <select id="session" name="session" required>
+                <option value="">Select a session</option>
+                <option value="morning">Morning Session</option>
+                <option value="afternoon">Afternoon Session</option>
+                <option value="evening">Evening Session</option>
+            </select>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
